@@ -1,0 +1,35 @@
+body {
+    background: radial-gradient(at top left, #2f3d50, #1d1f30 60%);
+    color: #fff;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    box-shadow: 0 8px 32px rgb(120, 120, 161);
+}
+
+.input-section button, .theme-toggle {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.input-section button:hover, .theme-toggle:hover {
+    background-color: #e68900;
+}
+
+.input-section input {
+    background: #a19c9c;
+}
+
+.error-message {
+    color: #ff5252;
+}
+
+.weather-info h2 {
+    color: #fff;
+}
+
+.weather-info p {
+    color: #ccc;
+}

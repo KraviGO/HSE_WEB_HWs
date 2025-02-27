@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Виджет Погоды</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link id="themeStylesheet" rel="stylesheet" href="theme-light.css"/>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggleBtn" title="Переключить тему">
+  ☀️/🌙
+</button>
+
+<div class="container">
+  <h1 class="main-title">Погода Сейчас</h1>
+  <div class="input-section">
+    <input type="text" id="locationInput" placeholder="Введите город или координаты">
+    <button id="getWeatherBtn">Получить</button>
+  </div>
+
+  <div id="weatherWidget" class="weather-widget hidden">
+    <div class="weather-icon">
+      <img id="weatherIcon" src="" alt="Иконка погоды">
+    </div>
+    <div class="weather-info">
+      <h2 id="cityName"></h2>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+    </div>
+  </div>
+
+  <div id="errorMessage" class="error-message"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
